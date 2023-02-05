@@ -127,9 +127,22 @@ namespace SocketDemo
         private static void ServerEnd(int myPort, int allowNum)
         {
             // Create socket
+            //
+            //AddressFamily：InterNetwork表示利用IP4協議
+            //
+            //SocketType.Stream 因使用TCP協議
+            //
+            //ProtocolType.Tcp 選用TCP協議
+            //
+            //https://stevenke.gitbooks.io/internetnote/content/chapter1.html
             socketListener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
             // Binding
+            //
+            //IPEndPoint結構
+            //
+            //IPAddress.Any方法得到本機的ＩＰ，同時聽網內/網外
+            //
             IPAddress ip = IPAddress.Any;
             int port = myPort;
             IPEndPoint point = new IPEndPoint(ip, port);
