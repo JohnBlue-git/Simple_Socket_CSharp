@@ -1,5 +1,12 @@
 /*
-
+Auther: John Blue
+Time: 2023/2
+Platform: VS2017
+Object: A demonstration of Client and Server socket.
+        In Main Class, Client and Server socket will be called and created.
+        In Client Class, SendMsgToServer and ReceiveMsgFromServer will be run as threads, and they will keep sending or receiving maessage from Server.
+        In Server Class, ServerCommunity will become a thread, waiting to connect with Client.
+        In each socket created inside ServerCommunity, SendMsgToClient and ReceiveClient will keep sending or receiving maessage from Client.
 */
 
 using System;
