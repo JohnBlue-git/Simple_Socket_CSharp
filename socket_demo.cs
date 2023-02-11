@@ -7,6 +7,8 @@ Object: A demonstration of Client and Server socket.
         In Client Class, SendMsgToServer and ReceiveMsgFromServer will be run as threads, and they will keep sending or receiving maessage from Server.
         In Server Class, ServerCommunity will become a thread, waiting to connect with Client.
         In each socket created inside ServerCommunity, SendMsgToClient and ReceiveClient will keep sending or receiving maessage from Client.
+Server: new socket >> set socket >> bind() >> listen() >> clientsocket = accept()
+Server: new socket >> set socket >> connect()
 */
 
 using System;
